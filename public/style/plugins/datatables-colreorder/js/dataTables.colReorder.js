@@ -97,7 +97,7 @@ function fnDomSwitch( nParent, iFrom, iTo )
 	var anTags = [];
 	for ( var i=0, iLen=nParent.childNodes.length ; i<iLen ; i++ )
 	{
-		if ( nParent.childNodes[i].nodeType == 1 )
+		if ( nParent.childNodes[i].nodeType === 1 )
 		{
 			anTags.push( nParent.childNodes[i] );
 		}
