@@ -1035,7 +1035,7 @@ a.note-dropdown-item:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100% !important;
+    width: 100%;
     z-index: 1050
 }
 
@@ -1070,7 +1070,7 @@ a.note-dropdown-item:hover {
 
 .note-editor.note-frame .note-status-output .pull-right,
 .note-editor.note-airframe .note-status-output .pull-right {
-    float: right !important
+    float: right
 }
 
 .note-editor.note-frame .note-status-output .text-muted,
@@ -1119,26 +1119,26 @@ a.note-dropdown-item:hover {
 
 .note-editor.note-frame .note-status-output .alert-success,
 .note-editor.note-airframe .note-status-output .alert-success {
-    color: #3c763d !important;
-    background-color: #dff0d8 !important
+    color: #3c763d;
+    background-color: #dff0d8
 }
 
 .note-editor.note-frame .note-status-output .alert-info,
 .note-editor.note-airframe .note-status-output .alert-info {
-    color: #31708f !important;
-    background-color: #d9edf7 !important
+    color: #31708f;
+    background-color: #d9edf7
 }
 
 .note-editor.note-frame .note-status-output .alert-warning,
 .note-editor.note-airframe .note-status-output .alert-warning {
-    color: #8a6d3b !important;
-    background-color: #fcf8e3 !important
+    color: #8a6d3b;
+    background-color: #fcf8e3
 }
 
 .note-editor.note-frame .note-status-output .alert-danger,
 .note-editor.note-airframe .note-status-output .alert-danger {
-    color: #a94442 !important;
-    background-color: #f2dede !important
+    color: #a94442;
+    background-color: #f2dede
 }
 
 .note-editor.note-frame .note-statusbar,
@@ -1202,7 +1202,7 @@ a.note-dropdown-item:hover {
 }
 
 .note-popover.popover .arrow {
-    left: 20px !important
+    left: 20px
 }
 
 .note-toolbar {
@@ -1235,7 +1235,7 @@ a.note-dropdown-item:hover {
 
 .note-popover .popover-content .note-btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher,
 .note-toolbar .note-btn-group .note-table .note-dimension-picker .note-dimension-picker-mousecatcher {
-    position: absolute !important;
+    position: absolute;
     z-index: 3;
     width: 10em;
     height: 10em;
@@ -1244,7 +1244,7 @@ a.note-dropdown-item:hover {
 
 .note-popover .popover-content .note-btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted,
 .note-toolbar .note-btn-group .note-table .note-dimension-picker .note-dimension-picker-unhighlighted {
-    position: relative !important;
+    position: relative;
     z-index: 1;
     width: 5em;
     height: 5em;
@@ -1253,7 +1253,7 @@ a.note-dropdown-item:hover {
 
 .note-popover .popover-content .note-btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted,
 .note-toolbar .note-btn-group .note-table .note-dimension-picker .note-dimension-picker-highlighted {
-    position: absolute !important;
+    position: absolute;
     z-index: 2;
     width: 1em;
     height: 1em;
@@ -1376,13 +1376,13 @@ a.note-dropdown-item:hover {
 .note-popover .popover-content .note-dropdown-menu.right::before,
 .note-toolbar .note-dropdown-menu.right::before {
     right: 9px;
-    left: auto !important
+    left: auto
 }
 
 .note-popover .popover-content .note-dropdown-menu.right::after,
 .note-toolbar .note-dropdown-menu.right::after {
     right: 10px;
-    left: auto !important
+    left: auto
 }
 
 .note-popover .popover-content .note-dropdown-menu.note-check a i,
@@ -1553,7 +1553,7 @@ a.note-dropdown-item:hover {
 }
 
 .note-hint-popover .popover-content .note-hint-group .note-hint-item {
-    display: block !important;
+    display: block;
     padding: 3px
 }
 
