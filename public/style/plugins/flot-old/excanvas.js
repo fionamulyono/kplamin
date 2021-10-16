@@ -903,7 +903,7 @@ if (!document.createElement('canvas').getContext) {
       var newSeq = false;
 
       for (var i = j; i < Math.min(j + chunkSize, this.currentPath_.length); i++) {
-        if (i % chunkSize == 0 && i > 0) { // move into position for next chunk
+        if (i % chunkSize === 0 && i > 0) { // move into position for next chunk
           lineStr.push(' m ', mr(this.currentPath_[i-1].x), ',', mr(this.currentPath_[i-1].y));
         }
 

@@ -94,7 +94,7 @@ var Lightbox = (function ($) {
 			this._modalId = 'ekkoLightbox-' + Math.floor(Math.random() * 1000 + 1);
 			this._$element = $element instanceof jQuery ? $element : $($element);
 
-			this._isBootstrap3 = $.fn.modal.Constructor.VERSION[0] == 3;
+			this._isBootstrap3 = $.fn.modal.Constructor.VERSION[0] === 3;
 
 			var h4 = '<h4 class="modal-title">' + (this._config.title || "&nbsp;") + '</h4>';
 			var btn = '<button type="button" class="close" data-dismiss="modal" aria-label="' + this._config.strings.close + '"><span aria-hidden="true">&times;</span></button>';
