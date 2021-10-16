@@ -11,8 +11,8 @@
     }
 }
 
-@-ms-keyframes dtb-spinner {
-    100% {
+@-ms-keyframes dtb-spinner { 100% 
+    {
         -ms-transform: rotate(360deg);
         transform: rotate(360deg)
     }
