@@ -22,7 +22,7 @@
 [class^="note-icon"]:before,
 [class*=" note-icon"]:before {
   display: inline-block;
-  font-family: summernote;
+  font-family: sans-serif;
   font-style: normal;
   font-size: inherit;
   text-decoration: inherit;
