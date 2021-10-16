@@ -1951,7 +1951,7 @@ var windowIsDefined = (typeof window === "undefined" ? "undefined" : _typeof(win
 			},
 			_offsetTop: function _offsetTop(obj) {
 				var offsetTop = obj.offsetTop;
-				while ((obj = obj.offsetParent) && !isNaN(obj.offsetTop)) {
+				while ((obj == obj.offsetParent) && !isNaN(obj.offsetTop)) {
 					offsetTop += obj.offsetTop;
 					if (obj.tagName !== 'BODY') {
 						offsetTop -= obj.scrollTop;
