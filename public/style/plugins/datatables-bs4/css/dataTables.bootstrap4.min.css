@@ -4,55 +4,55 @@ table.dataTable {
     margin-bottom: 6px;
     max-width: none;
     border-collapse: separate;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 table.dataTable td,
 table.dataTable th {
     -webkit-box-sizing: content-box;
-    box-sizing: content-box
+    box-sizing: content-box;
 }
 
 table.dataTable td.dataTables_empty,
 table.dataTable th.dataTables_empty {
-    text-align: center
+    text-align: center;
 }
 
 table.dataTable.nowrap th,
 table.dataTable.nowrap td {
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 div.dataTables_wrapper div.dataTables_length label {
     font-weight: normal;
     text-align: left;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 div.dataTables_wrapper div.dataTables_length select {
     width: auto;
-    display: inline-block
+    display: inline-block;
 }
 
 div.dataTables_wrapper div.dataTables_filter {
-    text-align: right
+    text-align: right;
 }
 
 div.dataTables_wrapper div.dataTables_filter label {
     font-weight: normal;
     white-space: nowrap;
-    text-align: left
+    text-align: left;
 }
 
 div.dataTables_wrapper div.dataTables_filter input {
     margin-left: 0.5em;
     display: inline-block;
-    width: auto
+    width: auto;
 }
 
 div.dataTables_wrapper div.dataTables_info {
     padding-top: 0.85em;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 div.dataTables_wrapper div.dataTables_paginate {
@@ -64,7 +64,7 @@ div.dataTables_wrapper div.dataTables_paginate {
 div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     margin: 2px 0;
     white-space: nowrap;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 div.dataTables_wrapper div.dataTables_processing {
@@ -114,7 +114,7 @@ table.dataTable thead .sorting_desc_disabled:after {
     position: absolute;
     bottom: 0.9em;
     display: block;
-    opacity: 0.3
+    opacity: 0.3;
 }
 
 table.dataTable thead .sorting:before,
