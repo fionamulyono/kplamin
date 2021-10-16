@@ -4790,7 +4790,7 @@ html.maximized-card {
 }
 
 .toast.bg-white {
-  background: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .toast.bg-white .toast-header {
