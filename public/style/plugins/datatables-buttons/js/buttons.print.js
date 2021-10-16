@@ -46,7 +46,6 @@ var _link = document.createElement( 'a' );
  * @param  {node}     el Element to convert
  */
 var _styleToAbs = function( el ) {
-	var url;
 	var clone = $(el).clone()[0];
 	var linkHost;
 
