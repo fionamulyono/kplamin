@@ -405,6 +405,6 @@
   }
 
   .daterangepicker .drp-calendar.left {
-    clear: none !important;
+    clear: none;
   }
 }

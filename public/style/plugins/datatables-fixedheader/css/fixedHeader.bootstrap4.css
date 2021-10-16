@@ -10,7 +10,7 @@ table.dataTable.fixedHeader-floating {
 }
 
 table.dataTable.fixedHeader-locked {
-  position: absolute !important;
+  position: absolute;
 }
 
 @media print {

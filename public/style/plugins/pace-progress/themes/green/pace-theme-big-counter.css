@@ -20,7 +20,7 @@
   height: 5rem;
   width: 5rem;
 
-  -webkit-transform: translate3d(0, 0, 0) !important;
+  -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
 }
