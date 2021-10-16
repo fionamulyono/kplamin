@@ -56,7 +56,7 @@
 /* Interaction Cues
 ----------------------------------*/
 .ui-state-disabled {
-	cursor: default !important;
+	cursor: default;
 	pointer-events: none;
 }
 
