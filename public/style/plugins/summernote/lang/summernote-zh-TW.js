@@ -109,7 +109,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ ({
 
 /***/ 50:
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 (function ($) {
   $.extend($.summernote.lang, {
