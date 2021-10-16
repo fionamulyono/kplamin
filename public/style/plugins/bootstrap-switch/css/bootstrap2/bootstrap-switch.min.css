@@ -443,7 +443,7 @@
 .bootstrap-switch.bootstrap-switch-disabled,
 .bootstrap-switch.bootstrap-switch-indeterminate,
 .bootstrap-switch.bootstrap-switch-readonly {
-    cursor: default !important
+    cursor: default
 }
 
 .bootstrap-switch.bootstrap-switch-disabled .bootstrap-switch-handle-off,
@@ -457,7 +457,7 @@
 .bootstrap-switch.bootstrap-switch-readonly .bootstrap-switch-label {
     opacity: .5;
     filter: alpha(opacity=50);
-    cursor: default !important
+    cursor: default
 }
 
 .bootstrap-switch.bootstrap-switch-animate .bootstrap-switch-container {
