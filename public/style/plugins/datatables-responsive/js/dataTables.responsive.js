@@ -235,7 +235,7 @@ $.extend( Responsive.prototype, {
 			$(dt.table().node()).addClass( 'dtr-'+details.type );
 		}
 
-		dt.on( 'column-reorder.dtr', function (e, settings, details) {
+		dt.on( 'column-reorder.dtr', function (e, settings) {
 			that._classLogic();
 			that._resizeAuto();
 			that._resize();
@@ -267,7 +267,7 @@ $.extend( Responsive.prototype, {
 			} );
 		});
 
-		dt.on( 'init.dtr', function (e, settings, details) {
+		dt.on( 'init.dtr', function (e, settings) {
 			that._resizeAuto();
 			that._resize();
 
