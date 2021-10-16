@@ -25,7 +25,7 @@
 
 .colorpicker.colorpicker-disabled,
 .colorpicker.colorpicker-disabled * {
-    cursor: default !important
+    cursor: default
 }
 
 .colorpicker div {
