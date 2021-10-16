@@ -1752,7 +1752,7 @@
           toast.addClass(this._config.class);
         }
 
-        if (this._config.delay && this._config.delay != 500) {
+        if (this._config.delay && this._config.delay !== 500) {
           toast.data('delay', this._config.delay);
         }
 
@@ -1780,7 +1780,7 @@
           toast_header.append($('<small />').html(this._config.subtitle));
         }
 
-        if (this._config.close == true) {
+        if (this._config.close === true) {
           var toast_close = $('<button data-dismiss="toast" />').attr('type', 'button').addClass('ml-2 mb-1 close').attr('aria-label', 'Close').append('<span aria-hidden="true">&times;</span>');
 
           if (this._config.title == null) {
