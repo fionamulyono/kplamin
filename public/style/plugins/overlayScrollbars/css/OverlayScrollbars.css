@@ -20,12 +20,12 @@ html.os-html > .os-host {
     display: block;
     overflow: hidden;
     box-sizing: border-box;
-    height: 100% !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    min-height: 100% !important;
-    margin: 0 !important;
-    position: absolute !important; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
 }
 html.os-html > .os-host > .os-padding {
     position: absolute; /* could be position: fixed; but it causes issues on iOS (-webkit-overflow-scrolling: touch) */
@@ -37,7 +37,7 @@ body.os-dragging * {
 .os-host,
 .os-host-textarea {
     position: relative;
-    overflow: visible !important;
+    overflow: visible;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -55,13 +55,13 @@ body.os-dragging * {
             align-items: flex-start;
 }
 .os-host-flexbox {
-    overflow: hidden !important;
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
 .os-host-flexbox > .os-size-auto-observer {
-    height: inherit !important;
+    height: inherit;
 }
 .os-host-flexbox > .os-content-glue {
     -webkit-box-flex: 1;
@@ -113,21 +113,21 @@ body.os-dragging * {
 }
 #os-dummy-scrollbar-size,
 .os-viewport {
-    -ms-overflow-style: scrollbar !important;
+    -ms-overflow-style: scrollbar;
 }
 .os-viewport-native-scrollbars-invisible#os-dummy-scrollbar-size,
 .os-viewport-native-scrollbars-invisible.os-viewport {
-    scrollbar-width: none !important;
+    scrollbar-width: none;
 }
 .os-viewport-native-scrollbars-invisible#os-dummy-scrollbar-size::-webkit-scrollbar,
 .os-viewport-native-scrollbars-invisible.os-viewport::-webkit-scrollbar,
 .os-viewport-native-scrollbars-invisible#os-dummy-scrollbar-size::-webkit-scrollbar-corner,
 .os-viewport-native-scrollbars-invisible.os-viewport::-webkit-scrollbar-corner {
-    display: none !important;
-    width: 0px !important;
-    height: 0px !important;
-    visibility: hidden !important;
-    background: transparent !important;
+    display: none;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    background: transparent;
 }
 .os-content-glue {
     box-sizing: inherit;
@@ -147,18 +147,18 @@ body.os-dragging * {
     top: 0;
     bottom: 0;
     right: 0;
-    width: auto !important;
-    height: auto !important;
+    width: auto;
+    height: auto;
     z-index: 1;
 }
 .os-host-overflow > .os-padding {
     overflow: hidden;
 }
 .os-viewport {
-    direction: inherit !important;
-    box-sizing: inherit !important;
-    resize: none !important;
-    outline: none !important;
+    direction: inherit;
+    box-sizing: inherit;
+    resize: none;
+    outline: none;
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -178,7 +178,7 @@ body.os-dragging * {
 }
 .os-content {
     direction: inherit;
-    box-sizing: border-box !important;
+    box-sizing: border-box;
     position: relative;
     display: block;
     height: 100%;
@@ -188,45 +188,45 @@ body.os-dragging * {
     visibility: visible;
 }
 .os-content > .os-textarea {
-    box-sizing: border-box !important;
-    direction: inherit !important;
-    background: transparent !important;
-    outline: 0px none transparent !important;
-    overflow: hidden !important;
-    position: absolute !important;
-    display: block !important;
-    top: 0 !important;
-    left: 0 !important;
-    margin: 0 !important;
-    border-radius: 0px !important;
-    float: none !important;
-    -webkit-filter: none !important;
-            filter: none !important;
-    border: none !important;
-    resize: none !important;
-    -webkit-transform: none !important;
-            transform: none !important;
-    max-width: none !important;
-    max-height: none !important;
-    box-shadow: none !important;
-    -webkit-perspective: none !important;
-            perspective: none !important;
-    opacity: 1 !important;
-    z-index: 1 !important;
-    clip: auto !important;
-    vertical-align: baseline !important;
+    box-sizing: border-box;
+    direction: inherit;
+    background: transparent;
+    outline: 0px none transparent;
+    overflow: hidden;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border-radius: 0px;
+    float: none;
+    -webkit-filter: none;
+            filter: none;
+    border: none;
+    resize: none;
+    -webkit-transform: none;
+            transform: none;
+    max-width: none;
+    max-height: none;
+    box-shadow: none;
+    -webkit-perspective: none;
+            perspective: none;
+    opacity: 1;
+    z-index: 1;
+    clip: auto;
+    vertical-align: baseline;
     padding: 0px;
 }
 .os-host-rtl > .os-padding > .os-viewport > .os-content > .os-textarea {
-    right: 0 !important;
+    right: 0;
 }
 .os-content > .os-textarea-cover {
     z-index: -1;
     pointer-events: none;
 }
 .os-content > .os-textarea[wrap='off'] {
-    white-space: pre !important;
-    margin: 0px !important;
+    white-space: pre;
+    margin: 0px;
 }
 .os-text-inherit {
     font-family: inherit;
@@ -291,7 +291,7 @@ body.os-dragging * {
     flex-basis: auto;
 }
 .os-size-auto-observer {
-    box-sizing: inherit !important;
+    box-sizing: inherit;
     height: 100%;
     width: inherit;
     max-width: 1px;
@@ -326,20 +326,20 @@ body.os-dragging * {
     overflow: hidden;
     z-index: -1;
     opacity: 0;
-    direction: ltr !important;
-    -webkit-box-flex: 0 !important;
-    -ms-flex: none !important;
-    flex: none !important;
+    direction: ltr;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
 }
 .os-resize-observer-item-final {
     position: absolute;
     left: 0;
     top: 0;
-    -webkit-transition: none !important;
-    transition: none !important;
-    -webkit-box-flex: 0 !important;
-    -ms-flex: none !important;
-    flex: none !important;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
 }
 .os-resize-observer {
     -webkit-animation-duration: 0.001s;
@@ -348,7 +348,7 @@ body.os-dragging * {
     animation-name: os-resize-observer-dummy-animation;
 }
 object.os-resize-observer {
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 }
 @-webkit-keyframes os-resize-observer-dummy-animation {
     from {
@@ -399,8 +399,8 @@ html.os-html > .os-host > .os-scrollbar {
     position: relative;
     height: 100%;
     width: 100%;
-    padding: 0 !important;
-    border: none !important;
+    padding: 0;
+    border: none;
 }
 .os-scrollbar-handle {
     pointer-events: auto;
@@ -414,10 +414,10 @@ html.os-html > .os-host > .os-scrollbar {
 }
 .os-scrollbar.os-scrollbar-unusable,
 .os-scrollbar.os-scrollbar-unusable * {
-    pointer-events: none !important;
+    pointer-events: none;
 }
 .os-scrollbar.os-scrollbar-unusable .os-scrollbar-handle {
-    opacity: 0 !important;
+    opacity: 0;
 }
 .os-scrollbar-horizontal {
     bottom: 0;
@@ -477,21 +477,21 @@ html.os-html > .os-host > .os-scrollbar {
 }
 .os-scrollbar:hover,
 .os-scrollbar-corner.os-scrollbar-corner-resize {
-    opacity: 1 !important;
-    visibility: visible !important;
+    opacity: 1;
+    visibility: visible;
 }
 .os-scrollbar-corner.os-scrollbar-corner-resize {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB3aWR0aD0iMTAiICAgaGVpZ2h0PSIxMCIgICB2ZXJzaW9uPSIxLjEiPiAgPGcgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsLTEwNDIuMzYyMikiICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUiPiAgICA8cGF0aCAgICAgICBzdHlsZT0iZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eTowLjQ5NDExNzY1O2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIiAgICAgICBkPSJtIDcuNDI0MjE4NywxMDQyLjM2MjIgYyAtMC43MjM1NzkyLDAgLTEuMzEwMTU2MiwwLjU4NjYgLTEuMzEwMTU2MiwxLjMxMDIgMCwwLjI5OSAwLjEwNDM0MTksMC41NzEgMC4yNzI5NDkyLDAuNzkxNSAwLjIwOTEwMjQsMC4xNDEzIDAuNDY1NjIwNiwwLjIxODQgMC43MzY5NjI5LDAuMjE4NCAwLjcyMzU3OTMsMCAxLjMxMDE1NjMsLTAuNTg2NiAxLjMxMDE1NjMsLTEuMzEwMiAwLC0wLjI3MTMgLTAuMDc3MDkzLC0wLjUyNzggLTAuMjE4MzU5NCwtMC43MzcgLTAuMjIwNDk0MSwtMC4xNjg2IC0wLjQ5MjU0NDMsLTAuMjcyOSAtMC43OTE1NTI4LC0wLjI3MjkgeiBtIDAsMy4wODQzIGMgLTAuNzIzNTc5MiwwIC0xLjMxMDE1NjIsMC41ODY2IC0xLjMxMDE1NjIsMS4zMTAyIDAsMC4yOTkgMC4xMDQzNDE5LDAuNTcxIDAuMjcyOTQ5MiwwLjc5MTUgMC4yMDkxMDI0LDAuMTQxMyAwLjQ2NTYyMDYsMC4yMTg0IDAuNzM2OTYyOSwwLjIxODQgMC43MjM1NzkzLDAgMS4zMTAxNTYzLC0wLjU4NjYgMS4zMTAxNTYzLC0xLjMxMDIgMCwtMC4yNzEzIC0wLjA3NzA5MywtMC41Mjc4IC0wLjIxODM1OTQsLTAuNzM2OSAtMC4yMjA0OTQxLC0wLjE2ODYgLTAuNDkyNTQ0MywtMC4yNzMgLTAuNzkxNTUyOCwtMC4yNzMgeiBtIC0zLjA4NDMyNjEsMCBjIC0wLjcyMzU3OTMsMCAtMS4zMTAxNTYzLDAuNTg2NiAtMS4zMTAxNTYzLDEuMzEwMiAwLDAuMjk5IDAuMTA0MzQxOSwwLjU3MSAwLjI3Mjk0OTIsMC43OTE1IDAuMjA5MTAyNCwwLjE0MTMgMC40NjU2MjA3LDAuMjE4NCAwLjczNjk2MjksMC4yMTg0IDAuNzIzNTc5MywwIDEuMzEwMTU2MywtMC41ODY2IDEuMzEwMTU2MywtMS4zMTAyIDAsLTAuMjcxMyAtMC4wNzcwOTMsLTAuNTI3OCAtMC4yMTgzNTk0LC0wLjczNjkgLTAuMjIwNDk0LC0wLjE2ODYgLTAuNDkyNTQ0MiwtMC4yNzMgLTAuNzkxNTUyNywtMC4yNzMgeiBtIC0zLjAyOTczNjQsMy4wMjk4IEMgMC41ODY1NzY5MywxMDQ4LjQ3NjMgMCwxMDQ5LjA2MjggMCwxMDQ5Ljc4NjQgYyAwLDAuMjk5IDAuMTA0MzQxOSwwLjU3MTEgMC4yNzI5NDkyMiwwLjc5MTYgMC4yMDkxMDIyOSwwLjE0MTIgMC40NjU2MjA2NSwwLjIxODMgMC43MzY5NjI4OCwwLjIxODMgMC43MjM1NzkzLDAgMS4zMTAxNTYzLC0wLjU4NjUgMS4zMTAxNTYzLC0xLjMxMDEgMCwtMC4yNzE0IC0wLjA3NzA5MywtMC41Mjc5IC0wLjIxODM1OTQsLTAuNzM3IC0wLjIyMDQ5NDEsLTAuMTY4NiAtMC40OTI1NDQzLC0wLjI3MjkgLTAuNzkxNTUyOCwtMC4yNzI5IHogbSAzLjAyOTczNjQsMCBjIC0wLjcyMzU3OTMsMCAtMS4zMTAxNTYzLDAuNTg2NSAtMS4zMTAxNTYzLDEuMzEwMSAwLDAuMjk5IDAuMTA0MzQxOSwwLjU3MTEgMC4yNzI5NDkyLDAuNzkxNiAwLjIwOTEwMjQsMC4xNDEyIDAuNDY1NjIwNywwLjIxODMgMC43MzY5NjI5LDAuMjE4MyAwLjcyMzU3OTMsMCAxLjMxMDE1NjMsLTAuNTg2NSAxLjMxMDE1NjMsLTEuMzEwMSAwLC0wLjI3MTQgLTAuMDc3MDkzLC0wLjUyNzkgLTAuMjE4MzU5NCwtMC43MzcgLTAuMjIwNDk0LC0wLjE2ODYgLTAuNDkyNTQ0MiwtMC4yNzI5IC0wLjc5MTU1MjcsLTAuMjcyOSB6IG0gMy4wODQzMjYxLDAgYyAtMC43MjM1NzkyLDAgLTEuMzEwMTU2MiwwLjU4NjUgLTEuMzEwMTU2MiwxLjMxMDEgMCwwLjI5OSAwLjEwNDM0MTksMC41NzExIDAuMjcyOTQ5MiwwLjc5MTYgMC4yMDkxMDI0LDAuMTQxMiAwLjQ2NTYyMDYsMC4yMTgzIDAuNzM2OTYyOSwwLjIxODMgMC43MjM1NzkzLDAgMS4zMTAxNTYzLC0wLjU4NjUgMS4zMTAxNTYzLC0xLjMxMDEgMCwtMC4yNzE0IC0wLjA3NzA5MywtMC41Mjc5IC0wLjIxODM1OTQsLTAuNzM3IC0wLjIyMDQ5NDEsLTAuMTY4NiAtMC40OTI1NDQzLC0wLjI3MjkgLTAuNzkxNTUyOCwtMC4yNzI5IHoiLz4gIDwvZz4gIDxnICAgICBzdHlsZT0iZGlzcGxheTppbmxpbmUiPiAgICA8cGF0aCAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIiAgICAgICBkPSJtIDguMjE1NzcxNSwwLjI3Mjk0OTIyIGMgMC4xNDEyNjY3LDAuMjA5MTAyMjkgMC4yMTgzNTk0LDAuNDY1NjIwNjUgMC4yMTgzNTk0LDAuNzM2OTYyODggMCwwLjcyMzU3OTMgLTAuNTg2NTc3LDEuMzEwMTU2MyAtMS4zMTAxNTYzLDEuMzEwMTU2MyAtMC4yNzEzNDIzLDAgLTAuNTI3ODYwNSwtMC4wNzcwOTMgLTAuNzM2OTYyOSwtMC4yMTgzNTk0IDAuMjM5NDEwNCwwLjMxMzA4NTkgMC42MTI2MzYyLDAuNTE4NjAzNSAxLjAzNzIwNywwLjUxODYwMzUgMC43MjM1NzkzLDAgMS4zMTAxNTYzLC0wLjU4NjU3NyAxLjMxMDE1NjMsLTEuMzEwMTU2MyAwLC0wLjQyNDU3MDc2IC0wLjIwNTUxNzYsLTAuNzk3Nzk2NTkgLTAuNTE4NjAzNSwtMS4wMzcyMDY5OCB6IG0gMCwzLjA4NDMyNjE4IGMgMC4xNDEyNjY3LDAuMjA5MTAyMyAwLjIxODM1OTQsMC40NjU2MjA2IDAuMjE4MzU5NCwwLjczNjk2MjkgMCwwLjcyMzU3OTMgLTAuNTg2NTc3LDEuMzEwMTU2MiAtMS4zMTAxNTYzLDEuMzEwMTU2MiAtMC4yNzEzNDIzLDAgLTAuNTI3ODYwNSwtMC4wNzcwOTMgLTAuNzM2OTYyOSwtMC4yMTgzNTkzIDAuMjM5NDEwNCwwLjMxMzA4NTkgMC42MTI2MzYyLDAuNTE4NjAzNSAxLjAzNzIwNywwLjUxODYwMzUgMC43MjM1NzkzLDAgMS4zMTAxNTYzLC0wLjU4NjU3NyAxLjMxMDE1NjMsLTEuMzEwMTU2MyAwLC0wLjQyNDU3MDggLTAuMjA1NTE3NiwtMC43OTc3OTY3IC0wLjUxODYwMzUsLTEuMDM3MjA3IHogbSAtMy4wODQzMjYyLDAgYyAwLjE0MTI2NjcsMC4yMDkxMDIzIDAuMjE4MzU5NCwwLjQ2NTYyMDYgMC4yMTgzNTk0LDAuNzM2OTYyOSAwLDAuNzIzNTc5MyAtMC41ODY1NzcsMS4zMTAxNTYyIC0xLjMxMDE1NjMsMS4zMTAxNTYyIC0wLjI3MTM0MjIsMCAtMC41Mjc4NjA1LC0wLjA3NzA5MyAtMC43MzY5NjI5LC0wLjIxODM1OTMgMC4yMzk0MTA0LDAuMzEzMDg1OSAwLjYxMjYzNjMsMC41MTg2MDM1IDEuMDM3MjA3MSwwLjUxODYwMzUgMC43MjM1NzkzLDAgMS4zMTAxNTYyLC0wLjU4NjU3NyAxLjMxMDE1NjIsLTEuMzEwMTU2MyAwLC0wLjQyNDU3MDggLTAuMjA1NTE3NSwtMC43OTc3OTY3IC0wLjUxODYwMzUsLTEuMDM3MjA3IHogTSAyLjEwMTcwOSw2LjM4NzAxMTcgYyAwLjE0MTI2NjcsMC4yMDkxMDI0IDAuMjE4MzU5NCwwLjQ2NTYyMDYgMC4yMTgzNTk0LDAuNzM2OTYyOSAwLDAuNzIzNTc5MyAtMC41ODY1NzcsMS4zMTAxNTYzIC0xLjMxMDE1NjMsMS4zMTAxNTYzIC0wLjI3MTM0MjIzLDAgLTAuNTI3ODYwNTksLTAuMDc3MDkzIC0wLjczNjk2Mjg4LC0wLjIxODM1OTQgMC4yMzk0MTAzOSwwLjMxMzA4NTkgMC42MTI2MzYyMiwwLjUxODYwMzUgMS4wMzcyMDY5OCwwLjUxODYwMzUgMC43MjM1NzkzLDAgMS4zMTAxNTYzLC0wLjU4NjU3NyAxLjMxMDE1NjMsLTEuMzEwMTU2MyAwLC0wLjQyNDU3MDggLTAuMjA1NTE3NiwtMC43OTc3OTY2IC0wLjUxODYwMzUsLTEuMDM3MjA3IHogbSAzLjAyOTczNjMsMCBjIDAuMTQxMjY2NywwLjIwOTEwMjQgMC4yMTgzNTk0LDAuNDY1NjIwNiAwLjIxODM1OTQsMC43MzY5NjI5IDAsMC43MjM1NzkzIC0wLjU4NjU3NywxLjMxMDE1NjMgLTEuMzEwMTU2MywxLjMxMDE1NjMgLTAuMjcxMzQyMiwwIC0wLjUyNzg2MDUsLTAuMDc3MDkzIC0wLjczNjk2MjksLTAuMjE4MzU5NCAwLjIzOTQxMDQsMC4zMTMwODU5IDAuNjEyNjM2MywwLjUxODYwMzUgMS4wMzcyMDcxLDAuNTE4NjAzNSAwLjcyMzU3OTMsMCAxLjMxMDE1NjIsLTAuNTg2NTc3IDEuMzEwMTU2MiwtMS4zMTAxNTYzIDAsLTAuNDI0NTcwOCAtMC4yMDU1MTc1LC0wLjc5Nzc5NjYgLTAuNTE4NjAzNSwtMS4wMzcyMDcgeiBtIDMuMDg0MzI2MiwwIGMgMC4xNDEyNjY3LDAuMjA5MTAyNCAwLjIxODM1OTQsMC40NjU2MjA2IDAuMjE4MzU5NCwwLjczNjk2MjkgMCwwLjcyMzU3OTMgLTAuNTg2NTc3LDEuMzEwMTU2MyAtMS4zMTAxNTYzLDEuMzEwMTU2MyAtMC4yNzEzNDIzLDAgLTAuNTI3ODYwNSwtMC4wNzcwOTMgLTAuNzM2OTYyOSwtMC4yMTgzNTk0IDAuMjM5NDEwNCwwLjMxMzA4NTkgMC42MTI2MzYyLDAuNTE4NjAzNSAxLjAzNzIwNywwLjUxODYwMzUgMC43MjM1NzkzLDAgMS4zMTAxNTYzLC0wLjU4NjU3NyAxLjMxMDE1NjMsLTEuMzEwMTU2MyAwLC0wLjQyNDU3MDggLTAuMjA1NTE3NiwtMC43OTc3OTY2IC0wLjUxODYwMzUsLTEuMDM3MjA3IHoiIC8+ICA8L2c+PC9zdmc+);
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    pointer-events: auto !important;
+    pointer-events: auto;
 }
 .os-host-rtl > .os-scrollbar-corner.os-scrollbar-corner-resize {
     -webkit-transform: scale(-1, 1);
     transform: scale(-1, 1);
 }
 .os-host-overflow {
-    overflow: hidden !important;
+    overflow: hidden;
 }
 .os-host-overflow-x {
 } 
@@ -506,10 +506,10 @@ THEMES:
 .os-theme-none > .os-scrollbar-horizontal,
 .os-theme-none > .os-scrollbar-vertical,
 .os-theme-none > .os-scrollbar-corner {
-    display: none !important;
+    display: none;
 }
 .os-theme-none > .os-scrollbar-corner-resize {
-    display: block !important;
+    display: block;
     min-width: 10px;
     min-height: 10px;
 }

@@ -6,8 +6,8 @@
 
  [class*="icheck-"] {
     min-height: 22px;
-    margin-top: 6px !important;
-    margin-bottom: 6px !important;
+    margin-top: 6px;
+    margin-bottom: 6px;
     padding-left: 0px;
 }
 
@@ -21,7 +21,7 @@
     }
 
 [class*="icheck-"] > label {
-    padding-left: 29px !important;
+    padding-left: 29px;
     min-height: 22px;
     line-height: 22px;
     display: inline-block;
@@ -33,7 +33,7 @@
 }
 
 [class*="icheck-"] > input:first-child {
-    position: absolute !important;
+    position: absolute;
     opacity: 0;
     margin: 0;
 }
