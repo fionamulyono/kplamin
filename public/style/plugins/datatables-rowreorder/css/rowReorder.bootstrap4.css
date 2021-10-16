@@ -1,5 +1,5 @@
 table.dt-rowReorder-float {
-  position: absolute !important;
+  position: absolute;
   opacity: 0.8;
   table-layout: fixed;
   outline: 2px solid #0275d8;
