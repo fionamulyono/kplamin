@@ -6,7 +6,7 @@ table.DTFC_Cloned tr {
 div.DTFC_LeftHeadWrapper table,
 div.DTFC_RightHeadWrapper table {
   border-bottom: none !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   background-color: white;
 }
 

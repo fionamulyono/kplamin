@@ -986,7 +986,7 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
   /* naturally position events, vertically stacking them */
   .fc-time-grid .fc-event {
     position: static !important;
-    margin: 3px 2px !important;
+    margin: 3px 2px;
   }
 
   /* for events that continue to a future day, give the bottom border back */

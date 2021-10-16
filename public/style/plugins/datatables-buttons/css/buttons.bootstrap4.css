@@ -106,7 +106,7 @@ div.dt-button-collection.fixed.four-column {
 }
 
 div.dt-button-collection> :last-child {
-    display: block !important;
+    display: block;
     -webkit-column-gap: 8px;
     -moz-column-gap: 8px;
     -ms-column-gap: 8px;
