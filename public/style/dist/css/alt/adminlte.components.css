@@ -3939,18 +3939,18 @@ textarea.form-control.is-warning {
 }
 
 .card.maximized-card {
-  height: 100% !important;
+  height: 100%;
   left: 0;
-  max-height: 100% !important;
-  max-width: 100% !important;
+  max-height: 100%;
+  max-width: 100%;
   position: fixed;
   top: 0;
-  width: 100% !important;
+  width: 100%;
   z-index: 9999;
 }
 
 .card.maximized-card.was-collapsed .card-body {
-  display: block !important;
+  display: block;
 }
 
 .card.maximized-card [data-widget='collapse'] {
@@ -3959,7 +3959,7 @@ textarea.form-control.is-warning {
 
 .card.maximized-card .card-header,
 .card.maximized-card .card-footer {
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 
 .card.collapsed-card .card-body,
@@ -4132,7 +4132,7 @@ html.maximized-card {
 }
 
 .show .btn-tool, .btn-tool:focus {
-  box-shadow: none !important;
+  box-shadow: none;
 }
 
 .text-sm .card-title {
@@ -4287,7 +4287,7 @@ html.maximized-card {
 }
 
 .todo-list > li.done .badge {
-  background: #adb5bd !important;
+  background: #adb5bd;
 }
 
 .todo-list .primary {
@@ -4479,7 +4479,7 @@ html.maximized-card {
 }
 
 .toast.bg-primary {
-  background: rgba(0, 123, 255, 0.9) !important;
+  background: rgba(0, 123, 255, 0.9);
 }
 
 .toast.bg-primary .close {
@@ -4493,7 +4493,7 @@ html.maximized-card {
 }
 
 .toast.bg-secondary {
-  background: rgba(108, 117, 125, 0.9) !important;
+  background: rgba(108, 117, 125, 0.9);
 }
 
 .toast.bg-secondary .close {
@@ -4507,7 +4507,7 @@ html.maximized-card {
 }
 
 .toast.bg-success {
-  background: rgba(40, 167, 69, 0.9) !important;
+  background: rgba(40, 167, 69, 0.9);
 }
 
 .toast.bg-success .close {
@@ -4521,7 +4521,7 @@ html.maximized-card {
 }
 
 .toast.bg-info {
-  background: rgba(23, 162, 184, 0.9) !important;
+  background: rgba(23, 162, 184, 0.9);
 }
 
 .toast.bg-info .close {
@@ -4535,7 +4535,7 @@ html.maximized-card {
 }
 
 .toast.bg-warning {
-  background: rgba(255, 193, 7, 0.9) !important;
+  background: rgba(255, 193, 7, 0.9);
 }
 
 .toast.bg-warning .toast-header {
@@ -4544,7 +4544,7 @@ html.maximized-card {
 }
 
 .toast.bg-danger {
-  background: rgba(220, 53, 69, 0.9) !important;
+  background: rgba(220, 53, 69, 0.9);
 }
 
 .toast.bg-danger .close {
@@ -4558,7 +4558,7 @@ html.maximized-card {
 }
 
 .toast.bg-light {
-  background: rgba(248, 249, 250, 0.9) !important;
+  background: rgba(248, 249, 250, 0.9);
 }
 
 .toast.bg-light .toast-header {
@@ -4567,7 +4567,7 @@ html.maximized-card {
 }
 
 .toast.bg-dark {
-  background: rgba(52, 58, 64, 0.9) !important;
+  background: rgba(52, 58, 64, 0.9);
 }
 
 .toast.bg-dark .close {
@@ -4581,7 +4581,7 @@ html.maximized-card {
 }
 
 .toast.bg-lightblue {
-  background: rgba(60, 141, 188, 0.9) !important;
+  background: rgba(60, 141, 188, 0.9);
 }
 
 .toast.bg-lightblue .close {
@@ -4595,7 +4595,7 @@ html.maximized-card {
 }
 
 .toast.bg-navy {
-  background: rgba(0, 31, 63, 0.9) !important;
+  background: rgba(0, 31, 63, 0.9);
 }
 
 .toast.bg-navy .close {
@@ -4609,7 +4609,7 @@ html.maximized-card {
 }
 
 .toast.bg-olive {
-  background: rgba(61, 153, 112, 0.9) !important;
+  background: rgba(61, 153, 112, 0.9);
 }
 
 .toast.bg-olive .close {
@@ -4623,7 +4623,7 @@ html.maximized-card {
 }
 
 .toast.bg-lime {
-  background: rgba(1, 255, 112, 0.9) !important;
+  background: rgba(1, 255, 112, 0.9);
 }
 
 .toast.bg-lime .toast-header {
@@ -4632,7 +4632,7 @@ html.maximized-card {
 }
 
 .toast.bg-fuchsia {
-  background: rgba(240, 18, 190, 0.9) !important;
+  background: rgba(240, 18, 190, 0.9);
 }
 
 .toast.bg-fuchsia .close {
@@ -4646,7 +4646,7 @@ html.maximized-card {
 }
 
 .toast.bg-maroon {
-  background: rgba(216, 27, 96, 0.9) !important;
+  background: rgba(216, 27, 96, 0.9);
 }
 
 .toast.bg-maroon .close {
@@ -4660,7 +4660,7 @@ html.maximized-card {
 }
 
 .toast.bg-blue {
-  background: rgba(0, 123, 255, 0.9) !important;
+  background: rgba(0, 123, 255, 0.9);
 }
 
 .toast.bg-blue .close {
@@ -4674,7 +4674,7 @@ html.maximized-card {
 }
 
 .toast.bg-indigo {
-  background: rgba(102, 16, 242, 0.9) !important;
+  background: rgba(102, 16, 242, 0.9);
 }
 
 .toast.bg-indigo .close {
@@ -4688,7 +4688,7 @@ html.maximized-card {
 }
 
 .toast.bg-purple {
-  background: rgba(111, 66, 193, 0.9) !important;
+  background: rgba(111, 66, 193, 0.9);
 }
 
 .toast.bg-purple .close {
@@ -4702,7 +4702,7 @@ html.maximized-card {
 }
 
 .toast.bg-pink {
-  background: rgba(232, 62, 140, 0.9) !important;
+  background: rgba(232, 62, 140, 0.9);
 }
 
 .toast.bg-pink .close {
@@ -4716,7 +4716,7 @@ html.maximized-card {
 }
 
 .toast.bg-red {
-  background: rgba(220, 53, 69, 0.9) !important;
+  background: rgba(220, 53, 69, 0.9);
 }
 
 .toast.bg-red .close {
@@ -4730,7 +4730,7 @@ html.maximized-card {
 }
 
 .toast.bg-orange {
-  background: rgba(253, 126, 20, 0.9) !important;
+  background: rgba(253, 126, 20, 0.9);
 }
 
 .toast.bg-orange .toast-header {
@@ -4739,7 +4739,7 @@ html.maximized-card {
 }
 
 .toast.bg-yellow {
-  background: rgba(255, 193, 7, 0.9) !important;
+  background: rgba(255, 193, 7, 0.9);
 }
 
 .toast.bg-yellow .toast-header {
@@ -4748,7 +4748,7 @@ html.maximized-card {
 }
 
 .toast.bg-green {
-  background: rgba(40, 167, 69, 0.9) !important;
+  background: rgba(40, 167, 69, 0.9);
 }
 
 .toast.bg-green .close {
@@ -4762,7 +4762,7 @@ html.maximized-card {
 }
 
 .toast.bg-teal {
-  background: rgba(32, 201, 151, 0.9) !important;
+  background: rgba(32, 201, 151, 0.9);
 }
 
 .toast.bg-teal .close {
@@ -4776,7 +4776,7 @@ html.maximized-card {
 }
 
 .toast.bg-cyan {
-  background: rgba(23, 162, 184, 0.9) !important;
+  background: rgba(23, 162, 184, 0.9);
 }
 
 .toast.bg-cyan .close {
@@ -4799,7 +4799,7 @@ html.maximized-card {
 }
 
 .toast.bg-gray {
-  background: rgba(108, 117, 125, 0.9) !important;
+  background: rgba(108, 117, 125, 0.9);
 }
 
 .toast.bg-gray .close {
@@ -4813,7 +4813,7 @@ html.maximized-card {
 }
 
 .toast.bg-gray-dark {
-  background: rgba(52, 58, 64, 0.9) !important;
+  background: rgba(52, 58, 64, 0.9);
 }
 
 .toast.bg-gray-dark .close {
@@ -4857,7 +4857,7 @@ html.maximized-card {
 }
 
 .text-sm .btn {
-  font-size: 0.875rem !important;
+  font-size: 0.875rem;
 }
 
 .btn-default {
