@@ -1,4 +1,4 @@
-# Browserify example
+"## Browserify example"
 
 Two steps need to be done for this to work
 
