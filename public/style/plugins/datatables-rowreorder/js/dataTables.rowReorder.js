@@ -797,7 +797,7 @@ $.fn.DataTable.RowReorder = RowReorder;
 
 // Attach a listener to the document which listens for DataTables initialisation
 // events so we can automatically initialise
-$(document).on( 'init.dt.dtr', function (e, settings, json) {
+$(document).on( 'init.dt.dtr', function (e, settings) {
 	if ( e.namespace !== 'dt' ) {
 		return;
 	}

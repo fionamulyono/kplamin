@@ -1000,7 +1000,7 @@ AutoFill.actions = {
 			return !isNaN( d - parseFloat( d ) );
 		},
 
-		option: function ( dt, cells ) {
+		option: function (dt) {
 			return dt.i18n(
 				'autoFill.increment',
 				'Increment / decrement each cell by: <input type="number" value="1">'
