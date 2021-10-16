@@ -16,7 +16,7 @@
     background-color: #ffffff;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: .75rem .75rem;
+    padding: 0.75rem 0.75rem;
     width: 148px;
     border-radius: 4px;
     -webkit-box-sizing: content-box;
@@ -70,7 +70,7 @@
 }
 
 .colorpicker:before {
-    content: '';
+    content: "";
     display: inline-block;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
@@ -83,7 +83,7 @@
 }
 
 .colorpicker:after {
-    content: '';
+    content: "";
     display: inline-block;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -111,16 +111,23 @@
     /* Chrome10+,Safari5.1+ */
     /* Opera 11.10+ */
     /* IE10+ */
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(black)), -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
-    background: linear-gradient(to bottom, transparent 0%, black 100%), linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(transparent),
+            to(black)
+        ),
+        -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to bottom, transparent 0%, black 100%),
+        linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     /* W3C */
     cursor: crosshair;
     float: left;
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 6px;
 }
-
 .colorpicker-saturation .colorpicker-guide {
     display: block;
     height: 6px;
@@ -157,7 +164,7 @@
 .colorpicker-hue,
 .colorpicker-alpha-color {
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .colorpicker-hue .colorpicker-guide,
@@ -181,13 +188,61 @@
     /* Chrome10+,Safari5.1+ */
     /* Opera 11.10+ */
     /* IE10+ */
-    background: -webkit-gradient(linear, left bottom, left top, from(red), color-stop(8%, #ff8000), color-stop(17%, yellow), color-stop(25%, #80ff00), color-stop(33%, lime), color-stop(42%, #00ff80), color-stop(50%, cyan), color-stop(58%, #0080ff), color-stop(67%, blue), color-stop(75%, #8000ff), color-stop(83%, magenta), color-stop(92%, #ff0080), to(red));
-    background: linear-gradient(to top, red 0%, #ff8000 8%, yellow 17%, #80ff00 25%, lime 33%, #00ff80 42%, cyan 50%, #0080ff 58%, blue 67%, #8000ff 75%, magenta 83%, #ff0080 92%, red 100%);
+    background: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        from(red),
+        color-stop(8%, #ff8000),
+        color-stop(17%, yellow),
+        color-stop(25%, #80ff00),
+        color-stop(33%, lime),
+        color-stop(42%, #00ff80),
+        color-stop(50%, cyan),
+        color-stop(58%, #0080ff),
+        color-stop(67%, blue),
+        color-stop(75%, #8000ff),
+        color-stop(83%, magenta),
+        color-stop(92%, #ff0080),
+        to(red)
+    );
+    background: linear-gradient(
+        to top,
+        red 0%,
+        #ff8000 8%,
+        yellow 17%,
+        #80ff00 25%,
+        lime 33%,
+        #00ff80 42%,
+        cyan 50%,
+        #0080ff 58%,
+        blue 67%,
+        #8000ff 75%,
+        magenta 83%,
+        #ff0080 92%,
+        red 100%
+    );
     /* W3C */
 }
 
 .colorpicker-alpha {
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), white;
+    background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        white;
     background-size: 10px 10px;
     background-position: 0 0, 5px 5px;
     display: none;
@@ -204,7 +259,6 @@
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
-
 .colorpicker-bar:before {
     content: "";
     display: table;
@@ -238,7 +292,23 @@
     height: 16px;
     display: inline-block;
     vertical-align: text-top;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), white;
+    background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        white;
     background-size: 10px 10px;
     background-position: 0 0, 5px 5px;
 }
@@ -293,13 +363,61 @@
     /* Chrome10+,Safari5.1+ */
     /* Opera 11.10+ */
     /* IE10+ */
-    background: -webkit-gradient(linear, right top, left top, from(red), color-stop(8%, #ff8000), color-stop(17%, yellow), color-stop(25%, #80ff00), color-stop(33%, lime), color-stop(42%, #00ff80), color-stop(50%, cyan), color-stop(58%, #0080ff), color-stop(67%, blue), color-stop(75%, #8000ff), color-stop(83%, magenta), color-stop(92%, #ff0080), to(red));
-    background: linear-gradient(to left, red 0%, #ff8000 8%, yellow 17%, #80ff00 25%, lime 33%, #00ff80 42%, cyan 50%, #0080ff 58%, blue 67%, #8000ff 75%, magenta 83%, #ff0080 92%, red 100%);
+    background: -webkit-gradient(
+        linear,
+        right top,
+        left top,
+        from(red),
+        color-stop(8%, #ff8000),
+        color-stop(17%, yellow),
+        color-stop(25%, #80ff00),
+        color-stop(33%, lime),
+        color-stop(42%, #00ff80),
+        color-stop(50%, cyan),
+        color-stop(58%, #0080ff),
+        color-stop(67%, blue),
+        color-stop(75%, #8000ff),
+        color-stop(83%, magenta),
+        color-stop(92%, #ff0080),
+        to(red)
+    );
+    background: linear-gradient(
+        to left,
+        red 0%,
+        #ff8000 8%,
+        yellow 17%,
+        #80ff00 25%,
+        lime 33%,
+        #00ff80 42%,
+        cyan 50%,
+        #0080ff 58%,
+        blue 67%,
+        #8000ff 75%,
+        magenta 83%,
+        #ff0080 92%,
+        red 100%
+    );
     /* W3C */
 }
 
 .colorpicker.colorpicker-horizontal .colorpicker-alpha {
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), white;
+    background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        white;
     background-size: 10px 10px;
     background-position: 0 0, 5px 5px;
 }
@@ -349,7 +467,7 @@
 
 .colorpicker.colorpicker-disabled:after {
     border: none;
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -367,12 +485,28 @@
 
 /** EXTENSIONS **/
 .colorpicker-preview {
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), white;
+    background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        white;
     background-size: 10px 10px;
     background-position: 0 0, 5px 5px;
 }
 
-.colorpicker-preview>div {
+.colorpicker-preview > div {
     position: absolute;
     left: 0;
     top: 0;
@@ -403,7 +537,23 @@
     display: block;
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1) 0), white;
+    background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(0, 0, 0, 0.1) 75%,
+            rgba(0, 0, 0, 0.1) 0
+        ),
+        white;
     background-size: 10px 10px;
     background-position: 0 0, 5px 5px;
 }
@@ -416,27 +566,27 @@
     height: 100%;
 }
 
-.colorpicker-swatch:nth-of-type(7n+0) {
+.colorpicker-swatch:nth-of-type(7n + 0) {
     margin-right: 0;
 }
 
-.colorpicker-with-alpha .colorpicker-swatch:nth-of-type(7n+0) {
+.colorpicker-with-alpha .colorpicker-swatch:nth-of-type(7n + 0) {
     margin-right: 6px;
 }
 
-.colorpicker-with-alpha .colorpicker-swatch:nth-of-type(8n+0) {
+.colorpicker-with-alpha .colorpicker-swatch:nth-of-type(8n + 0) {
     margin-right: 0;
 }
 
-.colorpicker-horizontal .colorpicker-swatch:nth-of-type(6n+0) {
+.colorpicker-horizontal .colorpicker-swatch:nth-of-type(6n + 0) {
     margin-right: 0;
 }
 
-.colorpicker-horizontal .colorpicker-swatch:nth-of-type(7n+0) {
+.colorpicker-horizontal .colorpicker-swatch:nth-of-type(7n + 0) {
     margin-right: 6px;
 }
 
-.colorpicker-horizontal .colorpicker-swatch:nth-of-type(8n+0) {
+.colorpicker-horizontal .colorpicker-swatch:nth-of-type(8n + 0) {
     margin-right: 6px;
 }
 
@@ -446,9 +596,9 @@
     clear: both;
 }
 
-*[dir='rtl'] .colorpicker-element input,
-.colorpicker-element[dir='rtl'] input,
-.colorpicker-element input[dir='rtl'] {
+*[dir="rtl"] .colorpicker-element input,
+.colorpicker-element[dir="rtl"] input,
+.colorpicker-element input[dir="rtl"] {
     direction: ltr;
     text-align: right;
 }
